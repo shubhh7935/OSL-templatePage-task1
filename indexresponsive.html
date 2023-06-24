@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleresponsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Enlight</title>
+</head>
+
+<body>
+  <div class="header-complete">
+    <div class="item1">
+      <div class="header1">
+        <img src="direction.png" alt="direction">
+        <p>Brooklyn, NY 10036, United States</p>
+        <img src="call.png" alt="calling">
+        <p>+1 123456789</p>
+        <img src="email.png" alt="email">
+        <p>info@uicookies.com</p>
+      </div>
+      <div class="header2">
+        <img class="header2img" src="whatsapp.png" alt="whatsapp">
+        <img class="header2img" src="whatsapp.png" alt="whatsapp">
+        <img class="header2img" src="whatsapp.png" alt="whatsapp">
+        <img class="header2img" src="whatsapp.png" alt="whatsapp">
+        <img src="search.png" alt="search icon">
+      </div>
+    </div>
+
+    <div class="item2">
+      <div class="logo">
+        <img src="logo.png" alt="logo">
+      </div>
+
+      <button id="hamburger-btn" class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      
+      <nav id="menu" class="menu">
+        <ul class="nav-item">
+          <li class="items">
+            <a href="#">Home</a>
+          </li>
+          <li class="items"><a href="#">Courses</a>
+          </li>
+          <li class="items"><a href="#">Teachers</a>
+          </li>
+          <li class="items"><a href="#">Events</a>
+          </li>
+          <li class="items"><a href="#">Pages</a>
+          <li class="items"><a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+const menu = document.getElementById('menu');
+
+hamburgerBtn.addEventListener('click', function() {
+  hamburgerBtn.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+  </script>
+</body>
+</html>
